@@ -1,0 +1,14 @@
+:root{
+  --main-color:rgb(109, 171, 173);
+  --text-style:
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
