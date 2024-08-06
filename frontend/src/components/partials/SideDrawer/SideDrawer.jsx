@@ -15,6 +15,7 @@ import {
   DrawerBody,
   Input,
   useToast,
+  Image,
   Spinner,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
@@ -29,6 +30,7 @@ import { USER_API_URI } from "../../../api";
 import UserListItem from "../UserAvatar/UserListItem";
 import { getSender } from "../../../config/chatLogic";
 import { Badge } from 'customizable-react-badges';
+import LOGO from '../../../../public/LOGO.png'
 
 const SideDrawer = () => {
   const navigate = useNavigate();
@@ -139,9 +141,12 @@ const SideDrawer = () => {
             </Text>
           </Button>
         </Tooltip>
+        <Box display={"flex"} alignItems={"center"}>
+        <Image src={LOGO} height="35px" bgColor={"white"} borderRadius={"full"} marginRight={"6px"} alt="" />
         <Text fontSize={"2xl"} fontFamily={"fantasy"}>
-          COOL-CHAT
+         FREE-CHAT
         </Text>
+        </Box>
         <div>
           <Menu>
             <MenuButton p={"1"}>

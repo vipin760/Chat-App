@@ -5,7 +5,6 @@ const User = require("../model/user.model")
 exports.sendMessage=async(req,res)=>{
     try {
         const { content, chatId} = req.body
-        console.log(req.body)
         if(!content || !chatId){
             return res.status(400).send({message:"oops...! missing something"})
         }
